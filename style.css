@@ -1,0 +1,83 @@
+html,
+body {
+    font-family: Monaco, monospace;
+}
+
+::-moz-selection, ::selection {
+    color: white;
+    background-color: black;
+}
+
+html,
+body,
+.container-y {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    padding: 10px;
+    font-family: Monaco, monospace;
+    font-size: large;
+    margin-top: 10px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+}
+
+input {
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    padding: 10px;
+    font-family: Monaco, monospace;
+    font-size: large;
+}
+
+input[type=text] {
+    width: 400px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.container-y {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-x {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+f {
+    color: darkorange;
+}
+
+k {
+    color: cornflowerblue;
+}
+
+err {
+    color:crimson;
+    font-weight: bold;
+}
+
+success {
+    color: rgb(47, 180, 47);
+}
