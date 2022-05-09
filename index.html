@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON converter</title>
+    <link rel="stylesheet" href="/apps/json-to-bson/style.css">
+</head>
+
+<body>
+    <div class="container-y">
+        <div class="container-x">
+            <h1>
+                {<k>"title"</k>: <f>"JSON Schema to BSON Schema converter"</f>}
+            </h1>
+        </div>
+        <div class="container-x">
+            <div style="text-align: center;">
+                <input type="text" id="url" placeholder="url of the JSON to be converted">
+                <button onclick="main()">Parse and download</button>
+                <p id="message">No data will be sent to the server</p>
+            </div>
+        </div>
+        <div class="container-x">
+            <p>Removes "$id" and "$schema" fields, transforms "type" field to "bsonType" field, and download "$ref"
+                fields in
+                order to have only one JSON.</p>
+        </div>
+    </div>
+
+    <script src="/apps/json-to-bson/script.js"></script>
+</body>
+
+</html>
